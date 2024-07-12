@@ -1,0 +1,78 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-header">
+      Restorani
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Tip</th>
+            <th>Konobari</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let restoran of restorani">
+            <td><button class="link-button" (click)="navigateToRestoranInfo(restoran.name)">{{ restoran.name }}</button></td>
+            <td>{{restoran.address}}</td>
+            <td>{{restoran.type}}</td>
+            <td>{{ getKonobariNames(restoran.name) }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card mt-4">
+    <div class="card-header">
+      Pretrazivanje
+    </div>
+    <div class="card-body">
+      <form class="form-row">
+        <div class="form-group col-md-4">
+          <label for="searchName">Pretraga po imenu:</label>
+          <input type="text" class="form-control" id="searchName" [(ngModel)]="searchName" name="searchName" placeholder="Pretraga po imenu">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="searchAddress">Pretraga po adresi:</label>
+          <input type="text" class="form-control" id="searchAddress" [(ngModel)]="searchAddress" name="searchAddress" placeholder="Pretraga po adresi">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="searchType">Pretraga po tipu:</label>
+          <input type="text" class="form-control" id="searchType" [(ngModel)]="searchType" name="searchType" placeholder="Pretraga po tipu">
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary mt-3" (click)="search()">Pretrazi</button>
+    </div>
+  </div>
+
+  <div class="card mt-4" *ngIf="searchedRestorani.length > 0">
+    <div class="card-header">
+      Rezultati Pretrage
+    </div>
+    <div class="card-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Tip</th>
+            <th>Konobari</th>
+            <th>Prosecna ocena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let restoran of searchedRestorani; let i = index">
+            <td><a [routerLink]="['/restoran', { name: restoran.name }]">{{ restoran.name }}</a></td>
+            <td>{{restoran.address}}</td>
+            <td>{{restoran.type}}</td>
+            <td>{{ getKonobariNames(restoran.name) }}</td>
+            <td><app-star-gost [rating]="average_grades[i]"></app-star-gost></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

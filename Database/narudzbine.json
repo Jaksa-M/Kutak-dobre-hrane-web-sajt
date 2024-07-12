@@ -1,0 +1,920 @@
+[{
+  "_id": {
+    "$oid": "666f0a612d124fa8b417b24b"
+  },
+  "status": "potvrdjena",
+  "expectedTime": "20-30 mins",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f0a612d124fa8b417b24d"
+        }
+      },
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f0a612d124fa8b417b24e"
+        }
+      }
+    ],
+    "amounts": [
+      11,
+      8
+    ],
+    "_id": {
+      "$oid": "666f0a612d124fa8b417b24c"
+    }
+  },
+  "name": "goran",
+  "date": "2024-06-16T16:11:44.312Z",
+  "total_price": 6500
+},
+{
+  "_id": {
+    "$oid": "666f0a952d124fa8b417b252"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f0a952d124fa8b417b254"
+        }
+      },
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f0a952d124fa8b417b255"
+        }
+      }
+    ],
+    "amounts": [
+      2,
+      2
+    ],
+    "_id": {
+      "$oid": "666f0a952d124fa8b417b253"
+    }
+  },
+  "name": "goran",
+  "date": "2024-06-16T15:53:57.258Z",
+  "total_price": 1400
+},
+{
+  "_id": {
+    "$oid": "666f0af12d124fa8b417b25b"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f0af12d124fa8b417b25d"
+        }
+      },
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f0af12d124fa8b417b25e"
+        }
+      }
+    ],
+    "amounts": [
+      3,
+      2
+    ],
+    "_id": {
+      "$oid": "666f0af12d124fa8b417b25c"
+    }
+  },
+  "name": "goran",
+  "date": "2024-06-16T15:55:29.954Z",
+  "total_price": 1700
+},
+{
+  "_id": {
+    "$oid": "666f0e682d124fa8b417b287"
+  },
+  "status": "potvrdjena",
+  "expectedTime": "20-30 mins",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f0e682d124fa8b417b289"
+        }
+      },
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f0e682d124fa8b417b28a"
+        }
+      }
+    ],
+    "amounts": [
+      2,
+      3
+    ],
+    "_id": {
+      "$oid": "666f0e682d124fa8b417b288"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T16:11:48.856Z",
+  "total_price": 1800
+},
+{
+  "_id": {
+    "$oid": "666f41d075774eda25a79591"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f41d075774eda25a79593"
+        }
+      },
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 400,
+        "ingredients": [
+          "krompir",
+          "dresing"
+        ],
+        "_id": {
+          "$oid": "666f41d075774eda25a79594"
+        }
+      }
+    ],
+    "amounts": [
+      2,
+      3
+    ],
+    "_id": {
+      "$oid": "666f41d075774eda25a79592"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T19:49:36.368Z",
+  "total_price": 2040
+},
+{
+  "_id": {
+    "$oid": "666f41e875774eda25a79596"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f41e875774eda25a79598"
+        }
+      },
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 400,
+        "ingredients": [
+          "krompir",
+          "dresing"
+        ],
+        "_id": {
+          "$oid": "666f41e875774eda25a79599"
+        }
+      }
+    ],
+    "amounts": [
+      2,
+      1
+    ],
+    "_id": {
+      "$oid": "666f41e875774eda25a79597"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T19:50:00.128Z",
+  "total_price": 1240
+},
+{
+  "_id": {
+    "$oid": "666f420b75774eda25a795b5"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Insolita",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 450,
+        "ingredients": [
+          "mleveno meso",
+          "kiseli kupus"
+        ],
+        "_id": {
+          "$oid": "666f420b75774eda25a795b7"
+        }
+      },
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 500,
+        "ingredients": [
+          "krompir",
+          "limun",
+          "riblje meso"
+        ],
+        "_id": {
+          "$oid": "666f420b75774eda25a795b8"
+        }
+      }
+    ],
+    "amounts": [
+      3,
+      2
+    ],
+    "_id": {
+      "$oid": "666f420b75774eda25a795b6"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T19:50:35.216Z",
+  "total_price": 2350
+},
+{
+  "_id": {
+    "$oid": "666f421975774eda25a795bd"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Insolita",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 450,
+        "ingredients": [
+          "mleveno meso",
+          "kiseli kupus"
+        ],
+        "_id": {
+          "$oid": "666f421975774eda25a795bf"
+        }
+      },
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 500,
+        "ingredients": [
+          "krompir",
+          "limun",
+          "riblje meso"
+        ],
+        "_id": {
+          "$oid": "666f421975774eda25a795c0"
+        }
+      }
+    ],
+    "amounts": [
+      4,
+      1
+    ],
+    "_id": {
+      "$oid": "666f421975774eda25a795be"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T19:50:49.832Z",
+  "total_price": 2300
+},
+{
+  "_id": {
+    "$oid": "666f424a75774eda25a795da"
+  },
+  "status": "potvrdjena",
+  "expectedTime": "50-60 mins",
+  "restoran": "Kod Jage i Gice",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Jaje na oko",
+        "image": "jajeNaOko.jpg",
+        "price": 200,
+        "ingredients": [
+          "paradajz"
+        ],
+        "_id": {
+          "$oid": "666f424a75774eda25a795dc"
+        }
+      },
+      {
+        "name": "Krempita",
+        "image": "krempita.jpg",
+        "price": 300,
+        "ingredients": [
+          "slag",
+          "secer"
+        ],
+        "_id": {
+          "$oid": "666f424a75774eda25a795dd"
+        }
+      }
+    ],
+    "amounts": [
+      4,
+      2
+    ],
+    "_id": {
+      "$oid": "666f424a75774eda25a795db"
+    }
+  },
+  "name": "pera",
+  "date": "2024-06-16T20:01:52.231Z",
+  "total_price": 1400
+},
+{
+  "_id": {
+    "$oid": "666f425475774eda25a795df"
+  },
+  "status": "potvrdjena",
+  "expectedTime": "50-60 mins",
+  "restoran": "Kod Jage i Gice",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Jaje na oko",
+        "image": "jajeNaOko.jpg",
+        "price": 200,
+        "ingredients": [
+          "paradajz"
+        ],
+        "_id": {
+          "$oid": "666f425475774eda25a795e1"
+        }
+      },
+      {
+        "name": "Krempita",
+        "image": "krempita.jpg",
+        "price": 300,
+        "ingredients": [
+          "slag",
+          "secer"
+        ],
+        "_id": {
+          "$oid": "666f425475774eda25a795e2"
+        }
+      }
+    ],
+    "amounts": [
+      5,
+      2
+    ],
+    "_id": {
+      "$oid": "666f425475774eda25a795e0"
+    }
+  },
+  "name": "pera",
+  "date": "2024-06-16T20:02:09.350Z",
+  "total_price": 1600
+},
+{
+  "_id": {
+    "$oid": "666f44dd75774eda25a796c9"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Kod Jage i Gice",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Jaje na oko",
+        "image": "jajeNaOko.jpg",
+        "price": 200,
+        "ingredients": [
+          "paradajz"
+        ],
+        "_id": {
+          "$oid": "666f44dd75774eda25a796cb"
+        }
+      },
+      {
+        "name": "Krempita",
+        "image": "krempita.jpg",
+        "price": 300,
+        "ingredients": [
+          "slag",
+          "secer"
+        ],
+        "_id": {
+          "$oid": "666f44dd75774eda25a796cc"
+        }
+      }
+    ],
+    "amounts": [
+      3,
+      3
+    ],
+    "_id": {
+      "$oid": "666f44dd75774eda25a796ca"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T20:02:37.199Z",
+  "total_price": 1500
+},
+{
+  "_id": {
+    "$oid": "666f44e275774eda25a796ce"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Kod Jage i Gice",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Jaje na oko",
+        "image": "jajeNaOko.jpg",
+        "price": 200,
+        "ingredients": [
+          "paradajz"
+        ],
+        "_id": {
+          "$oid": "666f44e275774eda25a796d0"
+        }
+      },
+      {
+        "name": "Krempita",
+        "image": "krempita.jpg",
+        "price": 300,
+        "ingredients": [
+          "slag",
+          "secer"
+        ],
+        "_id": {
+          "$oid": "666f44e275774eda25a796d1"
+        }
+      }
+    ],
+    "amounts": [
+      2,
+      2
+    ],
+    "_id": {
+      "$oid": "666f44e275774eda25a796cf"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T20:02:42.359Z",
+  "total_price": 1000
+},
+{
+  "_id": {
+    "$oid": "666f451175774eda25a79733"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f451175774eda25a79735"
+        }
+      },
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f451175774eda25a79736"
+        }
+      }
+    ],
+    "amounts": [
+      1,
+      1
+    ],
+    "_id": {
+      "$oid": "666f451175774eda25a79734"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T20:03:29.439Z",
+  "total_price": 700
+},
+{
+  "_id": {
+    "$oid": "666f451575774eda25a79738"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Birjan",
+        "image": "birjan.jpg",
+        "price": 300,
+        "ingredients": [
+          "pirinac",
+          "blitva"
+        ],
+        "_id": {
+          "$oid": "666f451575774eda25a7973a"
+        }
+      }
+    ],
+    "amounts": [
+      3
+    ],
+    "_id": {
+      "$oid": "666f451575774eda25a79739"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T20:03:33.142Z",
+  "total_price": 900
+},
+{
+  "_id": {
+    "$oid": "666f451f75774eda25a7973c"
+  },
+  "status": "potvrdjena",
+  "expectedTime": "30-40 mins",
+  "restoran": "Mali Konak",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Dosa",
+        "image": "dosa.jpg",
+        "price": 400,
+        "ingredients": [
+          "pirinac",
+          "paprike"
+        ],
+        "_id": {
+          "$oid": "666f451f75774eda25a7973e"
+        }
+      }
+    ],
+    "amounts": [
+      2
+    ],
+    "_id": {
+      "$oid": "666f451f75774eda25a7973d"
+    }
+  },
+  "name": "lana",
+  "date": "2024-06-16T20:07:52.958Z",
+  "total_price": 800
+},
+{
+  "_id": {
+    "$oid": "666f453775774eda25a79765"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f453775774eda25a79767"
+        }
+      }
+    ],
+    "amounts": [
+      4
+    ],
+    "_id": {
+      "$oid": "666f453775774eda25a79766"
+    }
+  },
+  "name": "goran",
+  "date": "2024-06-16T20:04:07.118Z",
+  "total_price": 1680
+},
+{
+  "_id": {
+    "$oid": "666f453b75774eda25a79769"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 400,
+        "ingredients": [
+          "krompir",
+          "dresing"
+        ],
+        "_id": {
+          "$oid": "666f453b75774eda25a7976b"
+        }
+      }
+    ],
+    "amounts": [
+      4
+    ],
+    "_id": {
+      "$oid": "666f453b75774eda25a7976a"
+    }
+  },
+  "name": "goran",
+  "date": "2024-06-16T20:04:11.894Z",
+  "total_price": 1600
+},
+{
+  "_id": {
+    "$oid": "666f46666ab04c61449169e0"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Insolita",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 450,
+        "ingredients": [
+          "mleveno meso",
+          "kiseli kupus"
+        ],
+        "_id": {
+          "$oid": "666f46666ab04c61449169e2"
+        }
+      },
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 500,
+        "ingredients": [
+          "krompir",
+          "limun",
+          "riblje meso"
+        ],
+        "_id": {
+          "$oid": "666f46666ab04c61449169e3"
+        }
+      }
+    ],
+    "amounts": [
+      7,
+      2
+    ],
+    "_id": {
+      "$oid": "666f46666ab04c61449169e1"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T20:09:10.614Z",
+  "total_price": 4150
+},
+{
+  "_id": {
+    "$oid": "666f46696ab04c61449169e5"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Insolita",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 450,
+        "ingredients": [
+          "mleveno meso",
+          "kiseli kupus"
+        ],
+        "_id": {
+          "$oid": "666f46696ab04c61449169e7"
+        }
+      }
+    ],
+    "amounts": [
+      4
+    ],
+    "_id": {
+      "$oid": "666f46696ab04c61449169e6"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T20:09:13.750Z",
+  "total_price": 1800
+},
+{
+  "_id": {
+    "$oid": "666f46946ab04c6144916a13"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f46946ab04c6144916a15"
+        }
+      }
+    ],
+    "amounts": [
+      3
+    ],
+    "_id": {
+      "$oid": "666f46946ab04c6144916a14"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T20:09:56.646Z",
+  "total_price": 1260
+},
+{
+  "_id": {
+    "$oid": "666f46996ab04c6144916a17"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f46996ab04c6144916a19"
+        }
+      }
+    ],
+    "amounts": [
+      3
+    ],
+    "_id": {
+      "$oid": "666f46996ab04c6144916a18"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T20:10:01.974Z",
+  "total_price": 1260
+},
+{
+  "_id": {
+    "$oid": "666f46a26ab04c6144916a1c"
+  },
+  "status": "neobradjena",
+  "expectedTime": "",
+  "restoran": "Santo Domingo",
+  "korpa": {
+    "jela": [
+      {
+        "name": "Grilovana Riba",
+        "image": "grilovanaRiba.jpg",
+        "price": 400,
+        "ingredients": [
+          "krompir",
+          "dresing"
+        ],
+        "_id": {
+          "$oid": "666f46a26ab04c6144916a1e"
+        }
+      },
+      {
+        "name": "Sarma",
+        "image": "sarma.jpg",
+        "price": 420,
+        "ingredients": [
+          "kiseli kupus",
+          "mleveno meso"
+        ],
+        "_id": {
+          "$oid": "666f46a26ab04c6144916a1f"
+        }
+      }
+    ],
+    "amounts": [
+      3,
+      3
+    ],
+    "_id": {
+      "$oid": "666f46a26ab04c6144916a1d"
+    }
+  },
+  "name": "boban",
+  "date": "2024-06-16T20:10:10.398Z",
+  "total_price": 2460
+}]

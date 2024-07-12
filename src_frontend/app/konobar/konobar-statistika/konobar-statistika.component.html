@@ -1,0 +1,37 @@
+<!-- <div class="chart-container">
+  <div *ngFor="let day of barChartLabels" class="bar-wrapper">
+    <div class="bar" [style.height.%]="(guestsByDay[day] / getMaxGuests()) * 100">
+      {{ guestsByDay[day] }}
+    </div>
+    <div class="label">{{ day }}</div>
+  </div>
+</div> -->
+<div class="bar-chart-container chart-border">
+  <h3 class="chart-title">Raspodela gostiju po danima za konobara:</h3>
+  <canvas id="barChartCanvas" width="600" height="200"></canvas>
+</div><br><br>
+
+<div class="pie-chart-container chart-border">
+  <h3>Raspodela gostiju medju konobarima:</h3>
+  <svg viewBox="0 0 32 32" class="pie-chart">
+    <ng-container *ngFor="let konobar of getKonobarNames(); let i = index">
+      <path
+        [attr.fill]="getPieSliceColor(konobar)"
+        [attr.d]="generatePieSlicePath(i)"
+      ></path>
+    </ng-container>
+    <ng-container *ngIf="getKonobarNames().length === 1 && rezervacijeRestoran.length > 0">
+      <path [attr.fill]="getPieSliceColor(getKonobarNames()[0])" d="M16 2 A 14 14 0 1 1 15.999 2"></path>
+    </ng-container>
+  </svg>
+  <!-- Legend -->
+  <div *ngFor="let konobar of getKonobarNames()" class="legend-item">
+    <span class="legend-color" [style.background-color]="getPieSliceColor(konobar)"></span>
+    {{ konobar }} ({{ konobarCount[konobar] }})
+  </div>
+</div><br><br><br>
+
+<div class="histogram-chart chart-border">
+  <h3 class="chart-title">Prosecan broj rezervacija u zadnja 24 meseca po danima:</h3>
+  <canvas id="histogramCanvas" width="600" height="200"></canvas>
+</div>

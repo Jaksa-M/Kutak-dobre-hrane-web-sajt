@@ -1,0 +1,20 @@
+<div class="form-container">
+  <label for="username">Unesi korisničko ime:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="username"><br>
+
+  <label for="currentPass">Unesi trenutnu lozinku:</label>
+  <input type="password" id="currentPass" name="currentPass" [(ngModel)]="currPass"><br>
+
+  <button *ngIf = "prikazi == false" (click)="dalje()" [disabled]="username == '' || currPass == ''">Dalje</button>
+
+  <div *ngIf = "prikazi == true">
+    <label for="newPass">Unesi novu lozinku:</label>
+    <input type="password" id="newPass" name="newPass" [(ngModel)]="newPass"><br>
+
+    <label for="repeatNewPass">Ponovi novu lozinku:</label>
+    <input type="password" id="repeatNewPass" name="repeatNewPass" [(ngModel)]="repeatNewPass"><br>
+
+    <button (click)="promeniLozinku()">Promeni</button>
+  </div>
+  <div class="message">{{message}}</div>
+</div>

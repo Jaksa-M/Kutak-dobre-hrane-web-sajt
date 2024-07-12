@@ -1,0 +1,80 @@
+
+/* Form container */
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Form labels */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Dark gray label text */
+}
+
+/* Form inputs */
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff; /* White input background */
+}
+
+/* Form inputs on focus */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus,
+.form-container input[type="file"]:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border color on focus */
+}
+
+/* Form radio buttons */
+.form-container input[type="radio"] {
+  margin-right: 5px;
+  color: #007bff; /* Blue radio button color */
+}
+
+/* Submit button */
+.form-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Submit button hover effect */
+.form-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+}
+
+/* Image preview */
+.image-preview {
+  margin-bottom: 15px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.passMessage {
+  color: rgb(115, 12, 12);
+}

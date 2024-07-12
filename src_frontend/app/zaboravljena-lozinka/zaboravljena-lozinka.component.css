@@ -1,0 +1,62 @@
+/* Container styling */
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input field styling */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Button styling */
+.form-container .step-button,
+.form-container .change-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-container .step-button[disabled],
+.form-container .change-button[disabled] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Step container styling */
+.step-container {
+  margin-top: 20px;
+}
+
+/* Message styling */
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d9534f;
+}

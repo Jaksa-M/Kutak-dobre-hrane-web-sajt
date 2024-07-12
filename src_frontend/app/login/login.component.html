@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kutak dobre hrane</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="username">Korisnicko ime:</label>
+              <input type="text" class="form-control" id="username" [(ngModel)]="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Lozinka:</label>
+              <input type="password" class="form-control" id="password" [(ngModel)]="password">
+            </div>
+            <button class="btn btn-primary" (click)="login()">Uloguj se</button>
+            <div class = "message">{{ message }}</div>
+            <div class="d-inline-block">
+              <button class="btn btn-link mr-2" (click)="registracija()">Registruj se</button>
+              <a [routerLink]="['/promeniLozinku']" class="btn btn-link mr-2">Promeni lozinku</a>
+              <a [routerLink]="['/zaboravljenaLozinka']" class="btn btn-link">Zaboravljena lozinka</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <p>Ukupan broj restorana: {{ restorani.length }}</p>
+            <p>Ukupan broj registrovanih gostiju: {{ gosti.length }}</p>
+            <p>Broj rezervacija u poslednja 24h: {{ rez24h }}</p>
+            <p>Broj rezervacija u poslednjih 7 dana: {{ rez7d }}</p>
+            <p>Broj rezervacija u poslednjih mesec dana: {{ rez30d }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Naziv <button class="btn btn-link" (click)="sort('name')">sort</button></th>
+                <th>Adresa <button class="btn btn-link" (click)="sort('address')">sort</button></th>
+                <th>Tip <button class="btn btn-link" (click)="sort('type')">sort</button></th>
+                <th>Konobari</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let restoran of restorani">
+                <td>{{ restoran.name }}</td>
+                <td>{{ restoran.address }}</td>
+                <td>{{ restoran.type }}</td>
+                <td>{{ getKonobariNames(restoran.name) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-8">
+        <div class="search-section">
+          <h5>Pretrazivanje</h5>
+          <div class="search-inputs">
+            <input type="text" [(ngModel)]="searchName" placeholder="Pretraga po imenu" class="form-control">
+          </div>
+          <div class="search-inputs">
+            <input type="text" [(ngModel)]="searchAddress" placeholder="Pretraga po adresi" class="form-control">
+          </div>
+          <div class="search-inputs">
+            <input type="text" [(ngModel)]="searchType" placeholder="Pretraga po tipu" class="form-control">
+          </div>
+          <button class="btn btn-primary" (click)="search()">Pretrazi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Searched Restaurants Table -->
+  <div class="row justify-content-center mt-3" *ngIf="searchedRestorani.length > 0">
+    <div class="col-md-8">
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Naziv</th>
+              <th>Adresa</th>
+              <th>Tip</th>
+              <th>Konobari</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let restoran of searchedRestorani">
+              <td>{{ restoran.name }}</td>
+              <td>{{ restoran.address }}</td>
+              <td>{{ restoran.type }}</td>
+              <td>{{ getKonobariNames(restoran.name) }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

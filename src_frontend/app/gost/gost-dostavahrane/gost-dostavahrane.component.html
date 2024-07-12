@@ -1,0 +1,35 @@
+<table border="1">
+  <caption>Aktuelne dostave</caption>
+  <thead>
+    <tr>
+      <th>Restoran</th>
+      <th>Status</th>
+      <th>Procenjeno vreme dostave</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dostava of aktuelneDostave">
+      <td data-label="Restoran">{{dostava.restoran}}</td>
+      <td data-label="Status">{{dostava.status}}</td>
+      <td data-label="Procenjeno vreme dostave">{{dostava.expectedTime}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1">
+  <caption>Prethodne dostave</caption>
+  <thead>
+    <tr>
+      <th>Restoran</th>
+      <th>Datum</th>
+      <th>Iznos racuna</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dostava of prethodneDostave">
+      <td data-label="Restoran">{{dostava.restoran}}</td>
+      <td data-label="Datum">{{formatDateWithoutTime(dostava.date)}}</td>
+      <td data-label="Iznos racuna">{{dostava.total_price}}</td>
+    </tr>
+  </tbody>
+</table>

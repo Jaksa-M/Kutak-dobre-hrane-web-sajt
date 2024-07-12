@@ -1,0 +1,47 @@
+<div *ngIf="user.blocked == false; else blockedMessage" class="rezervacija-form">
+  <label for="date">Unesi datum:</label>
+  <input type="date" name="date" [(ngModel)]="rezervacija.date" id="date">
+
+  <label for="time">Unesi vreme:</label>
+  <input type="time" name="time" [(ngModel)]="rezervacija.time" id="time">
+
+  <label for="people">Broj Osoba:</label>
+  <input type="number" min="0" name="people" [(ngModel)]="rezervacija.people" id="people">
+
+  <label for="request">Dodatni zahtevi:</label>
+  <textarea name="request" [(ngModel)]="rezervacija.request" rows="4" cols="50" id="request"></textarea>
+
+  <button (click)="rezervisi()">Rezervisi</button>
+  <span>{{ message }}</span>
+</div>
+
+<div class="working-hours">
+  <h3>Radno vreme</h3>
+  <ul>
+    <li *ngFor="let day of daysOfWeek">{{ day }}: {{ getWorkingHours(day) }}</li>
+  </ul>
+</div>
+
+<div class="wrapper">
+  <div class="top-bar">
+    <div class="restaurant-name">
+      {{ restoran?.name }}
+    </div>
+    <div class="inputs">
+      <label for="datum">Datum:</label>
+      <input type="date" name="datum" [(ngModel)]="rezervacija2.date" (change)="onDateTimeChange()" id="datum">
+
+      <label for="vreme">Vreme:</label>
+      <input type="time" name="vreme" [(ngModel)]="rezervacija2.time" (change)="onDateTimeChange()" id="vreme">
+    </div>
+  </div>
+  <canvas #canvas width="800" height="600" (click)="handleCanvasClick($event)"></canvas>
+</div>
+
+<button (click)="rezervisi2()">Rezervisi</button>
+
+<ng-template #blockedMessage class="blocked-message">
+  <div>
+    <p>Vaš nalog je blokiran i ne možete da rezervišete sto.</p>
+  </div>
+</ng-template>

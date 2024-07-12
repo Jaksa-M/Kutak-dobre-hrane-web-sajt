@@ -1,0 +1,78 @@
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style table header */
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style table data */
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Add zebra-striping to table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the table caption */
+caption {
+  caption-side: top;
+  font-size: 1.5em;
+  margin: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.2em;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+}

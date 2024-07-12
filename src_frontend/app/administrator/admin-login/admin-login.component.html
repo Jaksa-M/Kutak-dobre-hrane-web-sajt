@@ -1,0 +1,14 @@
+<div class="login-form">
+  <div>
+    <label for="username">Korisnicko ime:</label>
+    <input type="text" id="username" [(ngModel)]="username">
+  </div>
+  <div>
+    <label for="password">Lozinka:</label>
+    <input type="password" id="password" [(ngModel)]="password">
+  </div>
+  <button class="login-btn" (click)="login()">Uloguj se</button>
+  <br>
+  <div class="message">{{message}}</div>
+</div>
+<br><br>

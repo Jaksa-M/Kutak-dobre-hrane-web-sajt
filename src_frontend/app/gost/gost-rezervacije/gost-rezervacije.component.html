@@ -1,0 +1,60 @@
+<!-- Aktuelne Rezervacije -->
+<h3>Aktuelne Rezervacije</h3>
+<table class="rezervacije-table">
+  <tr>
+    <th>Datum rezervisanja</th>
+    <th>Restoran</th>
+    <th>Adresa</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let rezervacija of aktuelneRezervacije; let i = index">
+    <td>{{ rezervacija.date }} {{ rezervacija.time }}</td>
+    <td>{{ rezervacija.restoran }}</td>
+    <td>{{ adrese[i] }}</td>
+    <td>
+      <button (click)="otkazi(rezervacija)" [disabled]="minutesDiffArr[i] < 45">Otkazi</button>
+    </td>
+  </tr>
+</table>
+<br>
+
+<h3>Istekle Rezervacije</h3>
+<table class="rezervacije-table">
+  <tr>
+    <th>Datum rezervisanja</th>
+    <th>Restoran</th>
+    <th>Komentar</th>
+    <th>Ocena</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let rezervacija of istekleRezervacije">
+    <td>{{ rezervacija.date }} {{ rezervacija.time }}</td>
+    <td>{{ rezervacija.restoran }}</td>
+    <td>{{ rezervacija.comment || '' }}</td>
+    <td>{{ rezervacija.grade !== -1 ? rezervacija.grade : '' }}</td>
+    <td>
+      <button *ngIf="rezervacija.grade == -1 && !rezervacija.comment && rezervacija.state == 'pojavio se'" (click)="openRatingForm(rezervacija)">Oceni</button>
+    </td>
+  </tr>
+</table>
+
+<!-- Popup Form -->
+<div *ngIf="showPopupForm" class="popup-form">
+  <div class="popup-content">
+    <button class="close-button" (click)="closePopupForm()">X</button>
+    <h3 class="popup-title">Oceni posetu restoranu</h3>
+    <form (ngSubmit)="oceni()">
+      <div class="form-group">
+        <label for="comment">Komentar:</label>
+        <textarea id="comment" name="comment" [(ngModel)]="selectedRezervacija.comment"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="stars">Ocena:</label>
+        <star-rating [(selectedStars)]="selectedRezervacija.grade" (selectedStarsChange)="onRatingSelected($event)"></star-rating>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-button">Potvrdi</button>
+      </div>
+    </form>
+  </div>
+</div>

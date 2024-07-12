@@ -1,0 +1,172 @@
+<div class="section">
+  <h2>Konobari:</h2>
+  <table>
+    <tr>
+      <th>Korisnicko ime</th>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Akcije</th>
+    </tr>
+    <tr *ngFor="let konobar of konobari">
+      <td>{{konobar.username}}</td>
+      <td>{{konobar.firstname}}</td>
+      <td>{{konobar.lastname}}</td>
+      <td>
+        <button class="action-btn" (click)="azuriraj(konobar)">Azuriraj</button>
+        <button class="action-btn" (click)="deaktiviraj(konobar)">Deaktiviraj</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- Dodaj konobara -->
+<div class="section">
+  <button class="add-btn" (click)="dodajKonobara()">Dodaj konobara</button>
+</div><br>
+<div *ngIf="showForm">
+  <h4>Unesite podatke za novog konobara:</h4>
+  Korisnicko ime: <input type="text" name = "username" [(ngModel)]="noviKonobar.username"><br>
+  Lozinka: <input type="password" name = "password" [(ngModel)]="passKonobar"><br>
+  <span class = "message">{{passMessage}}</span><br>
+  Pitanje: <input type="text" name = "question" [(ngModel)]="noviKonobar.question"><br>
+  Odgovor: <input type="text" name = "answer" [(ngModel)]="noviKonobar.answer"><br>
+  Ime: <input type="text" name = "firstname" [(ngModel)]="noviKonobar.firstname"><br>
+  Prezime: <input type="text" name = "lastname" [(ngModel)]="noviKonobar.lastname"><br>
+  Pol: <input type="radio" name = "gender" value = "musko" [(ngModel)]="noviKonobar.gender"> M
+  <input type="radio" name = "gender" value = "zensko" [(ngModel)]="noviKonobar.gender"> Z<br>
+  Adresa: <input type="text" name = "address" [(ngModel)]="noviKonobar.address"><br>
+  Broj telefona: <input type="text" name = "phone" [(ngModel)]="noviKonobar.phone"><br>
+  Mejl: <input type="text" name = "mail" [(ngModel)]="noviKonobar.mail"><br>
+  Broj kreditne kartice: <input type="text" name = "credit_card" [(ngModel)]="noviKonobar.credit_card"><br>
+  Restoran: <input type="text" name = "restaurant" [(ngModel)]="noviKonobar.restaurant"><br>
+  <span class = "message">{{restoranMessage}}</span><br>
+  <button (click)="dodaj()">Dodaj</button>
+</div>
+
+<div class="section">
+  <h2>Gosti:</h2>
+  <table>
+    <tr>
+      <th>Korisnicko ime</th>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Akcije</th>
+    </tr>
+    <tr *ngFor="let gost of gosti">
+      <td>{{gost.username}}</td>
+      <td>{{gost.firstname}}</td>
+      <td>{{gost.lastname}}</td>
+      <td>
+        <button class="action-btn" (click)="azuriraj(gost)">Azuriraj</button>
+        <button class="action-btn" (click)="deaktiviraj(gost)">Deaktiviraj</button>
+        <div *ngIf="gost.blocked" class="action-btn">
+          <button (click)="odblokiraj(gost)">Odblokiraj</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<br><br>
+
+<div class="section">
+  <h2>Zahtevi:</h2>
+  <table>
+    <tr>
+      <th>Korisnicko ime</th>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Akcije</th>
+    </tr>
+    <tr *ngFor="let zahtev of zahtevi">
+      <td>{{zahtev.username}}</td>
+      <td>{{zahtev.firstname}}</td>
+      <td>{{zahtev.lastname}}</td>
+      <td>
+        <button class="action-btn" (click)="prihvati(zahtev)">Prihvati</button>
+        <button class="action-btn" (click)="odbi(zahtev)">Odbi</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<br><br>
+
+<!-- Dodaj Restoran -->
+<div class="section">
+  <h2>Dodaj Restoran:</h2>
+  <div>
+    <label for="restoranIme">Naziv restorana:</label>
+    <input type="text" id="restoranIme" [(ngModel)]="noviRestoran.name">
+  </div>
+  <div>
+    <label for="restoranTip">Tip:</label>
+    <input type="text" id="restoranTip" [(ngModel)]="noviRestoran.type">
+  </div>
+  <div>
+    <label for="restoranAdresa">Adresa:</label>
+    <input type="text" id="restoranAdresa" [(ngModel)]="noviRestoran.address">
+  </div>
+  <div>
+    <label for="restoranOpis">Opis:</label>
+    <input type="text" id="restoranOpis" [(ngModel)]="noviRestoran.description">
+  </div>
+  <div>
+    <label for="restoranTelefon">Kontakt telefon:</label>
+    <input type="text" id="restoranTelefon" [(ngModel)]="noviRestoran.phone">
+  </div>
+  <div class="working-time">
+    <h4>Radno Vreme:</h4>
+    <div class="working-time-day" *ngFor="let day of ['Ponedeljak', 'Utorak', 'Sreda', 'Cetvrtak', 'Petak', 'Subota', 'Nedelja']">
+      <label>{{ day }}:</label>
+      <input type="time" [(ngModel)]="noviRestoran.workingTime[day].start" (change)="updateWorkingTime(day, noviRestoran.workingTime[day].start, noviRestoran.workingTime[day].end)">
+      <input type="time" [(ngModel)]="noviRestoran.workingTime[day].end" (change)="updateWorkingTime(day, noviRestoran.workingTime[day].start, noviRestoran.workingTime[day].end)">
+    </div>
+  </div>
+
+  <div class="canvas-options">
+    <br><br>
+    <button class="toggle-button" [class.active]="canvasUpload === 'file'" (click)="canvasUpload = 'file'">Ucitacu izgled restorana</button>
+    <button class="toggle-button" [class.active]="canvasUpload === 'draw'" (click)="canvasUpload = 'draw'">Nacrtacu izgled restorana</button>
+    <br><br>
+  </div>
+  <div class="section" *ngIf = "canvasUpload == 'file'">
+    <input type="file" accept=".json" (change)="onFileUploadCanvas($event)">
+  </div>
+
+  <br>
+  <div *ngIf = "canvasUpload == 'draw'">
+    <button class="add-btn" (click)="selectElement('sto')">Sto</button>
+    <input type="number" [(ngModel)]="memberCount" min="1" max="4" *ngIf="selectedElement === 'sto'">
+    <button class="add-btn" (click)="selectElement('toalet')">Toalet</button>
+    <button class="add-btn" (click)="selectElement('kuhinja')">Kuhinja</button><br><br>
+  </div>
+  <canvas #canvas width="800" height="600" style="border: 1px solid black;"></canvas>
+  <br><br>
+</div>
+
+<div class="section">
+  <h4>Napravi jelovnik:</h4>
+  <div>
+    <label for="nazivJela">Naziv jela:</label>
+    <input type="text" id="nazivJela" [(ngModel)]="jelo.name">
+  </div>
+  <div>
+    <label for="cena">Cena:</label>
+    <input type="text" id="cena" [(ngModel)]="jelo.price">
+  </div>
+  <div>
+    <label for="slika">Slika:</label>
+    <input type="file" id="slika" accept="image/jpeg, image/png" (change)="onFileSelected($event)">
+  </div>
+  <img *ngIf="jelo.image" [src]="jelo.image" alt="Profile Picture" width="150">
+  <div>
+    <label for="sastojak">Sastojci:</label>
+    <input type="text" id="sastojak" [(ngModel)]="sastojak">
+    <button class="add-btn" (click)="dodajSastojak()">Dodaj Sastojak</button>
+  </div>
+  <button class="add-btn" (click)="dodajJelo()">Dodaj Jelo</button>
+
+  <div *ngFor="let imageUrl of savedImageUrls">
+    <img [src]="imageUrl" alt="Saved Image">
+  </div>
+</div><br>
+<button class="add-btn" (click)="saveCanvas()">Napravi restoran</button>

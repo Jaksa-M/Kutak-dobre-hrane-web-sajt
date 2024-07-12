@@ -1,0 +1,27 @@
+<div *ngFor="let narudzbina of narudzbine" class="order-item">
+  <div class="order-info">
+    <span class="order-user">{{ narudzbina.name }}</span>
+    <span class="order-restaurant">{{ narudzbina.restoran }}</span>
+    <ul class="korpa-content">
+      <li *ngFor="let jelo of narudzbina.korpa.jela; let i = index">
+        <span>{{ jelo.name }}  </span>
+        <span>{{ jelo.price * narudzbina.korpa.amounts[i] }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="order-actions">
+    <button class="btn confirm-btn" (click)="toggleSelect(narudzbina)">
+      <i class="fas fa-check"></i> potvrdi
+    </button>
+    <select *ngIf="narudzbina === selectedNarudzbina" [(ngModel)]="selectedTime" class="time-select">
+      <option value="" disabled selected hidden>Choose Time</option>
+      <option value="20-30 mins">20-30 mins</option>
+      <option value="30-40 mins">30-40 mins</option>
+      <option value="50-60 mins">50-60 mins</option>
+    </select>
+    <button *ngIf="narudzbina === selectedNarudzbina" class="btn confirm-time-btn" (click)="potvrdiSaVremenom()">zavrsi</button>
+    <button class="btn reject-btn" (click)="odbij(narudzbina)">
+      <i class="fas fa-times"></i> odbij
+    </button>
+  </div>
+</div>

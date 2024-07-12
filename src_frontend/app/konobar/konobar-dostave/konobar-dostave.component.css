@@ -1,0 +1,83 @@
+.order-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-user {
+  font-weight: bold;
+}
+
+.order-restaurant {
+  color: #666;
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.confirm-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.confirm-time-btn {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.confirmation-section {
+  margin-top: 20px;
+}
+
+.confirmation-section select {
+  margin-right: 10px;
+}
+
+.time-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.confirm-time-btn {
+  font-size: 12px;
+  padding: 5px 10px;
+}

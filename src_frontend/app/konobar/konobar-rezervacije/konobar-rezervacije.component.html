@@ -1,0 +1,75 @@
+<h3>Neobradjene rezervacije:</h3>
+<div class="rezervacije-table">
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Korisnik</th>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Broj ljudi</th>
+        <th>Zahtevi</th>
+        <th>Potvrdi</th>
+        <th>Odbij</th>
+        <th>Komentar</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rezervacija of rezervacije">
+        <td>{{rezervacija.user}}</td>
+        <td>{{rezervacija.date}}</td>
+        <td>{{rezervacija.time}}</td>
+        <td>{{rezervacija.people}}</td>
+        <td>{{rezervacija.request}}</td>
+        <td><button (click)="potvrdi(rezervacija)">Potvrdi</button></td>
+        <td><button (click)="odbi(rezervacija)" [disabled]="!rezervacija.rejectedComment">Odbij</button></td>
+        <td><textarea name="komentar" [(ngModel)]="rezervacija.rejectedComment"></textarea></td>
+        <td><button (click)="prikazi(rezervacija)">Prikazi</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Restoran info -->
+<div class="wrapper">
+  <div class="top-bar">
+    <div class="restaurant-name">{{restoran?.name}}</div>
+  </div>
+  <canvas #canvas width="800" height="600" (click)="handleCanvasClick($event)"></canvas>
+</div><br>
+
+<h3>Potvrdjene rezervacije:</h3>
+<div class="rezervacije-table">
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Korisnik</th>
+        <th>Datum</th>
+        <th>Vreme</th>
+        <th>Broj ljudi</th>
+        <th>Zahtevi</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rezervacija of potvrdjeneRezervacije; let i = index">
+        <td>{{rezervacija.user}}</td>
+        <td>{{rezervacija.date}}</td>
+        <td>{{rezervacija.time}}</td>
+        <td>{{rezervacija.people}}</td>
+        <td>{{rezervacija.request}}</td>
+        <td>
+          <div *ngIf="istekloPolaH[i]" class="pojavio-se-container">
+            <label><input type="radio" name="pojavioSe{{i}}" value="jeste" [(ngModel)]="pojavioSe[i]">Jeste</label>
+            <label><input type="radio" name="pojavioSe{{i}}" value="nije" [(ngModel)]="pojavioSe[i]">Nije</label>
+            <button (click)="sePojavio(rezervacija, i)">se pojavio</button>
+            <span *ngIf="moguceProduziti[i] == true" class = "produzi-button">
+              <button (click) = "produzi(rezervacija, i)">produzi za 1h</button>
+            </span>
+          </div>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

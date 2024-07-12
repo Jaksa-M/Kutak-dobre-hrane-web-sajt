@@ -1,0 +1,21 @@
+<div class="container">
+  <div *ngIf="restoran">
+    <h1 class="restaurant-header">{{restoran.name}}</h1>
+    <p class="restaurant-info">{{restoran.address}}</p>
+    <p class="restaurant-info">{{restoran.type}}</p>
+    <p class="restaurant-info">{{restoran.phone}}</p>
+
+    <div *ngIf="restoran.comments">
+      <h3 class="comments-header">Komentari:</h3>
+      <div *ngFor="let komentar of restoran.comments" class="comment">
+        <p>{{komentar}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div id="map" style="margin: auto;">
+  <a href="https://www.maptiler.com" style="position:absolute;left:10px;bottom:10px;z-index:999;"><img src="https://api.maptiler.com/resources/logo.svg" alt="MapTiler logo"></a>
+</div>
+<p><a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">&copy; OpenStreetMap contributors</a></p>
+<br><br>

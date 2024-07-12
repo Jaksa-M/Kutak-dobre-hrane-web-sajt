@@ -1,0 +1,92 @@
+.wrapper {
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 820px; /* Adjust this value if necessary */
+  margin: 0 auto;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px; /* Smaller spacing below the top bar */
+  padding: 0 10px; /* Add padding for alignment */
+  box-sizing: border-box;
+}
+
+.restaurant-name {
+  background-color: beige;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+  align-self: flex-start; /* Align with left border of canvas */
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+}
+
+.inputs input {
+  margin-left: 10px;
+}
+
+canvas {
+  border: 1px solid black;
+  margin: 0 10px;
+}
+
+/* Additional styles for konobar-rezervacije.component.css */
+.rezervacije-table {
+  margin-bottom: 30px;
+}
+
+.rezervacije-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rezervacije-table th,
+.rezervacije-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.rezervacije-table th {
+  background-color: #f2f2f2;
+}
+
+.rezervacije-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.rezervacije-table tr:hover {
+  background-color: #ddd;
+}
+
+textarea {
+  width: 100%;
+  min-height: 50px;
+}
+
+.isteklo-info {
+  color: red;
+  font-weight: bold;
+}
+
+.pojavio-se-container {
+  margin-top: 10px;
+}
+
+.pojavio-se-container label {
+  margin-right: 10px;
+}
+
+.produzi-button {
+  margin-left: 10px;
+}

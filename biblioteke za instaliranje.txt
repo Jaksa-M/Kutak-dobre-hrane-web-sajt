@@ -1,0 +1,32 @@
+npm install leaflet
+npm install --save-dev @types/leaflet 
+npm install multer
+npm install bootstrap
+npm install crypto-js
+npm install --save-dev @types/crypto-js
+npm install chart.js ng2-charts
+
+u angular.json dodaj ovde za bootstrap:
+
+{
+  ...
+  "projects": {
+    "your-project-name": {
+      ...
+      "architect": {
+        "build": {
+          "options": {
+            ...
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": []
+          },
+          ...
+        }
+      }
+    }
+  },
+  ...
+}

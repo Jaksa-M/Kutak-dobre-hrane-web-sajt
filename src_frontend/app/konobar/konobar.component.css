@@ -1,0 +1,21 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  padding-top: 20px;
+}
+

@@ -1,0 +1,22 @@
+<div class="form-container">
+  <label for="username">Unesi korisničko ime:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="username"><br>
+  <button (click)="nextStep()" class="step-button">Sledeći korak</button>
+
+  <div *ngIf="step >= 1" class="step-container">
+      <label for="answer">Pitanje: {{user?.question}}</label><br>
+      <input type="text" id="answer" name="answer" [(ngModel)]="answer"><br>
+      <button (click)="nextStep()" class="step-button">Sledeći korak</button>
+  </div>
+
+  <div *ngIf="step >= 2" class="step-container">
+      <label for="newPass">Unesi novu lozinku:</label>
+      <input type="password" id="newPass" name="newPass" [(ngModel)]="newPass"><br>
+      <span class = "message">{{passMessage}}</span><br>
+      <label for="repeatNewPass">Ponovi novu lozinku:</label>
+      <input type="password" id="repeatNewPass" name="repeatNewPass" [(ngModel)]="repeatNewPass"><br>
+      <button (click)="promeniLozinku()" [disabled]="newPass === '' || repeatNewPass === ''" class="change-button">Promeni</button>
+  </div>
+
+  <div class="message">{{message}}</div>
+</div>

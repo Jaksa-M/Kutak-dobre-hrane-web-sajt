@@ -1,0 +1,76 @@
+.jelovnik-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.jelo-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.jelo-item:last-child {
+  border-bottom: none;
+}
+
+.jelo-details {
+  margin-bottom: 10px;
+}
+
+.jelo-details img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.jelo-details ul {
+  list-style-type: none;
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.jelo-details ul li {
+  margin-bottom: 5px;
+}
+
+.jelo-quantity {
+  margin-right: 10px;
+}
+
+.jelo-actions {
+  margin-top: 10px;
+}
+
+.jelo-actions button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.jelo-actions button:hover {
+  background-color: #45a049;
+}
+
+.jelo-actions button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  margin-right: 20px; /* Adjust the space between buttons as needed */
+}
+
+.dodaj-button {
+  margin-left: 10px; /* Adjust spacing as needed */
+}

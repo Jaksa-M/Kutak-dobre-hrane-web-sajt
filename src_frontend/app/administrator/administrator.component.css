@@ -1,0 +1,106 @@
+button {
+  margin: 5px;
+}
+
+.login-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin-top: 10px;
+  color: red;
+}
+
+.section {
+  margin: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="file"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.working-time {
+  margin-top: 20px;
+}
+
+.working-time-day {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.working-time label {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.working-time input[type="time"] {
+  width: 130px;
+  margin-right: 10px;
+}
+
+.canvas-options {
+  margin-top: 20px;
+}
+
+.toggle-button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: #fff;
+}

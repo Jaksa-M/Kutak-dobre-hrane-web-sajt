@@ -1,0 +1,33 @@
+/* login.component.css */
+
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.btn-link {
+  color: #007bff;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.table {
+  margin-top: 30px;
+}
+
+.search-section {
+  margin-top: 30px;
+}
+
+.search-inputs {
+  margin-bottom: 10px;
+}
+
+.message{
+  color: rgb(174, 12, 12);
+}

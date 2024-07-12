@@ -1,0 +1,16 @@
+Profilna slika: <input #singleInput type="file" accept="image/jpeg, image/png" (change)="onFileSelected($event)">
+<br>
+<div *ngIf="noChange == true; else changedImage">
+  <img *ngIf="user.image" [src]="'http://localhost:4000/images/' + user.image" alt="Profile Picture" width="150"><br>
+</div>
+<ng-template #changedImage>
+  <img *ngIf="user.image" [src]="user.image" alt="Profile Picture" width="150"><br>
+</ng-template>
+<br/>
+Ime: <input type = "text" name = "firstname" [(ngModel)] = "user.firstname"><br>
+Prezime: <input type = "text" name = "lastname" [(ngModel)] = "user.lastname"><br>
+Adresa: <input type = "text" name = "address" [(ngModel)] = "user.address"><br>
+Mejl: <input type = "text" name = "mail" [(ngModel)] = "user.mail"><br>
+Telefon: <input type = "text" name = "firstname" [(ngModel)] = "user.phone"><br>
+Broj kreditne kartice: <input type = "text" name = "credit_card" [(ngModel)] = "user.credit_card"><br>
+<button (click) = "potvrdi()">Potvrdi</button>

@@ -1,0 +1,24 @@
+<!-- Modified HTML with updated CSS classes -->
+<div *ngIf="restoran?.menu" class="jelovnik-container">
+  <h2>Jelovnik</h2>
+  <div *ngFor="let jelo of restoran.menu; let i = index" class="jelo-item">
+    <div class="jelo-details">
+      <p>Naziv: {{ jelo.name }}</p>
+      <img *ngIf="jelo.image" [src]="'http://localhost:4000/images/' + jelo.image" alt="slika jela" width="150">
+      <p>Cena: {{ jelo.price }}</p>
+      <p>Sastojci:</p>
+      <ul>
+        <li *ngFor="let ingredient of jelo.ingredients">{{ ingredient }}</li>
+      </ul>
+    </div>
+    <div class="jelo-actions">
+      <span class="jelo-quantity">Količina:</span>
+      <input type="number" name="kolicina" [(ngModel)]="kolicina[i]" value="0" min="0">
+      <button class="dodaj-button" (click)="dodajUKorpu(jelo, i)" [disabled]="kolicina[i] == 0">Dodaj u korpu</button>
+    </div>
+  </div>
+  <div class="button-container">
+    <button (click)="pregledajKorpu()">Pregledaj korpu</button>
+    <button (click)="zavrsiNarudzbinu()">Završi narudžbinu</button>
+  </div>
+</div>

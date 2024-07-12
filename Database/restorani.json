@@ -1,0 +1,526 @@
+[{
+  "_id": {
+    "$oid": "666d611e677316d46f78e2ea"
+  },
+  "konobar": [
+    "dana",
+    "lena"
+  ],
+  "address": "Savska 124",
+  "name": "Insolita",
+  "type": "japanski",
+  "grades": [],
+  "comments": [
+    "sve pohvale"
+  ],
+  "phone": "0642288990",
+  "description": "domaca Japanska hrana",
+  "menu": [
+    {
+      "name": "Sarma",
+      "image": "sarma.jpg",
+      "price": 450,
+      "ingredients": [
+        "mleveno meso",
+        "kiseli kupus"
+      ]
+    },
+    {
+      "name": "Grilovana Riba",
+      "image": "grilovanaRiba.jpg",
+      "price": 500,
+      "ingredients": [
+        "krompir",
+        "limun",
+        "riblje meso"
+      ]
+    }
+  ],
+  "canvas": [
+    {
+      "type": "sto",
+      "x": 89,
+      "y": 130.5198974609375,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 1
+    },
+    {
+      "type": "sto",
+      "x": 235,
+      "y": 130.5198974609375,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 2
+    },
+    {
+      "type": "sto",
+      "x": 79,
+      "y": 236.5198974609375,
+      "radius": 20,
+      "members": 3,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 3
+    },
+    {
+      "type": "sto",
+      "x": 231,
+      "y": 231.5198974609375,
+      "radius": 20,
+      "members": 3,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 4
+    },
+    {
+      "type": "toalet",
+      "x": 100,
+      "y": 487.0653533935547,
+      "width": 80,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    },
+    {
+      "type": "kuhinja",
+      "x": 390,
+      "y": 515.0653533935547,
+      "width": 100,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    }
+  ],
+  "workingTime": {
+    "Ponedeljak": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Utorak": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Sreda": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Cetvrtak": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Petak": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Subota": {
+      "start": "11:30",
+      "end": "19:30"
+    },
+    "Nedelja": {
+      "start": "12:30",
+      "end": "17:30"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "666e050411e32592acae226d"
+  },
+  "konobar": [
+    "teki"
+  ],
+  "address": "Jase Prodanovica 31",
+  "name": "Santo Domingo",
+  "type": "domaca kuhinja",
+  "grades": [],
+  "comments": [],
+  "phone": "0654135786",
+  "description": "tradicionalna kuhinja visokog kvaliteta",
+  "menu": [
+    {
+      "name": "Sarma",
+      "image": "sarma.jpg",
+      "price": 420,
+      "ingredients": [
+        "kiseli kupus",
+        "mleveno meso"
+      ]
+    },
+    {
+      "name": "Grilovana Riba",
+      "image": "grilovanaRiba.jpg",
+      "price": 400,
+      "ingredients": [
+        "krompir",
+        "dresing"
+      ]
+    }
+  ],
+  "canvas": [
+    {
+      "type": "sto",
+      "x": 56,
+      "y": 89.7159423828125,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 1
+    },
+    {
+      "type": "sto",
+      "x": 185,
+      "y": 89.7159423828125,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 2
+    },
+    {
+      "type": "sto",
+      "x": 320,
+      "y": 87.53411865234375,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 3
+    },
+    {
+      "type": "sto",
+      "x": 470,
+      "y": 90.53411865234375,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 4
+    },
+    {
+      "type": "toalet",
+      "x": 82,
+      "y": 355.4432067871094,
+      "width": 80,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    },
+    {
+      "type": "kuhinja",
+      "x": 393,
+      "y": 372.4432067871094,
+      "width": 100,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    }
+  ],
+  "workingTime": {
+    "Ponedeljak": {
+      "start": "11:00",
+      "end": "22:00"
+    },
+    "Utorak": {
+      "start": "11:00",
+      "end": "22:00"
+    },
+    "Sreda": {
+      "start": "11:00",
+      "end": "22:00"
+    },
+    "Cetvrtak": {
+      "start": "11:00",
+      "end": "22:00"
+    },
+    "Petak": {
+      "start": "11:00",
+      "end": "22:00"
+    },
+    "Subota": {
+      "start": "13:00",
+      "end": "20:00"
+    },
+    "Nedelja": {
+      "start": "13:00",
+      "end": "20:00"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "666e0884a9cf4cb0222c8dab"
+  },
+  "konobar": [
+    "jela"
+  ],
+  "address": "Bulevar Mihajla Pupina 12",
+  "name": "Kod Jage i Gice",
+  "type": "domaca kuhinja",
+  "grades": [],
+  "comments": [],
+  "phone": "064273462",
+  "description": "hrana spremana na tradicionalan nacin",
+  "menu": [
+    {
+      "name": "Jaje na oko",
+      "image": "jajeNaOko.jpg",
+      "price": 200,
+      "ingredients": [
+        "paradajz"
+      ]
+    },
+    {
+      "name": "Krempita",
+      "image": "krempita.jpg",
+      "price": 300,
+      "ingredients": [
+        "slag",
+        "secer"
+      ]
+    }
+  ],
+  "canvas": [
+    {
+      "type": "sto",
+      "x": 80,
+      "y": 89.31820678710938,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 1
+    },
+    {
+      "type": "sto",
+      "x": 74,
+      "y": 199.31820678710938,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 2
+    },
+    {
+      "type": "sto",
+      "x": 529,
+      "y": 83.31820678710938,
+      "radius": 20,
+      "members": 3,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 3
+    },
+    {
+      "type": "sto",
+      "x": 520,
+      "y": 185.31820678710938,
+      "radius": 20,
+      "members": 3,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 4
+    },
+    {
+      "type": "toalet",
+      "x": 141,
+      "y": 476.8636474609375,
+      "width": 80,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    },
+    {
+      "type": "kuhinja",
+      "x": 361,
+      "y": 491.8636474609375,
+      "width": 100,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    },
+    {
+      "type": "sto",
+      "x": 281,
+      "y": 81.13638305664062,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 5
+    },
+    {
+      "type": "sto",
+      "x": 280,
+      "y": 190.13638305664062,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 6
+    }
+  ],
+  "workingTime": {
+    "Ponedeljak": {
+      "start": "08:00",
+      "end": "21:00"
+    },
+    "Utorak": {
+      "start": "08:00",
+      "end": "09:00"
+    },
+    "Sreda": {
+      "start": "08:00",
+      "end": "21:00"
+    },
+    "Cetvrtak": {
+      "start": "08:00",
+      "end": "21:00"
+    },
+    "Petak": {
+      "start": "08:00",
+      "end": "21:00"
+    },
+    "Subota": {
+      "start": "08:00",
+      "end": "19:00"
+    },
+    "Nedelja": {
+      "start": "08:00",
+      "end": "19:00"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "666e0a748d2f1053e16a54f1"
+  },
+  "konobar": [
+    "mika",
+    "zana"
+  ],
+  "address": "Pionirska 30",
+  "name": "Mali Konak",
+  "type": "indijski",
+  "grades": [],
+  "comments": [
+    "sve pohvale"
+  ],
+  "phone": "0643112765",
+  "description": "odise mirisima indijske hrane",
+  "menu": [
+    {
+      "name": "Birjan",
+      "image": "birjan.jpg",
+      "price": 300,
+      "ingredients": [
+        "pirinac",
+        "blitva"
+      ]
+    },
+    {
+      "name": "Dosa",
+      "image": "dosa.jpg",
+      "price": 400,
+      "ingredients": [
+        "pirinac",
+        "paprike"
+      ]
+    }
+  ],
+  "canvas": [
+    {
+      "type": "sto",
+      "x": 99,
+      "y": 104.40908813476562,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 1
+    },
+    {
+      "type": "sto",
+      "x": 94,
+      "y": 209.40908813476562,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 2
+    },
+    {
+      "type": "sto",
+      "x": 226,
+      "y": 210.40908813476562,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 3
+    },
+    {
+      "type": "sto",
+      "x": 228,
+      "y": 105.40908813476562,
+      "radius": 20,
+      "members": 4,
+      "color": "white",
+      "selected": false,
+      "tableNumber": 4
+    },
+    {
+      "type": "toalet",
+      "x": 107,
+      "y": 415.3182067871094,
+      "width": 80,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    },
+    {
+      "type": "kuhinja",
+      "x": 392,
+      "y": 431.3182067871094,
+      "width": 100,
+      "height": 60,
+      "color": "white",
+      "selected": false
+    }
+  ],
+  "workingTime": {
+    "Ponedeljak": {
+      "start": "08:30",
+      "end": "22:30"
+    },
+    "Utorak": {
+      "start": "08:30",
+      "end": "22:30"
+    },
+    "Sreda": {
+      "start": "08:30",
+      "end": "22:30"
+    },
+    "Cetvrtak": {
+      "start": "08:30",
+      "end": "22:30"
+    },
+    "Petak": {
+      "start": "08:30",
+      "end": "22:30"
+    },
+    "Subota": {
+      "start": "09:00",
+      "end": "21:30"
+    },
+    "Nedelja": {
+      "start": "09:00",
+      "end": "21:30"
+    }
+  }
+}]

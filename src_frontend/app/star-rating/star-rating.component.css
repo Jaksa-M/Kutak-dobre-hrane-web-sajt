@@ -1,0 +1,9 @@
+.selected {
+  color: rgb(232, 232, 80);
+  cursor: pointer;
+}
+
+span {
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<table class="cart-table">
+  <thead>
+    <tr>
+      <th>Naziv</th>
+      <th>Sastojci</th>
+      <th>Kolicina</th>
+      <th>Cena</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jelo of korpa.jela; let i = index">
+      <td>{{ jelo.name }}</td>
+      <td>
+        <div>{{ jelo.ingredients.join(', ') }}</div>
+      </td>
+      <td>{{ korpa.amounts[i] }}</td>
+      <td>{{ jelo.price * korpa.amounts[i] }}</td>
+      <td>
+        <button class="action-btn" (click)="incrementAmount(i)">+</button>
+        <button class="action-btn" (click)="decrementAmount(i)">-</button>
+        <button class="action-btn" (click)="removeItem(i)">Ukloni</button>
+      </td>
+    </tr>
+  </tbody>
+</table><br>
+<button class="back-btn" (click)="goBack()">Nazad</button>

@@ -1,0 +1,229 @@
+[{
+  "_id": {
+    "$oid": "6645212e5924f52619b61dae"
+  },
+  "firstname": "Zile",
+  "gender": "musko",
+  "lastname": "Markovic",
+  "password": "cbb85b2dec35ba19f91ac1555d921e38a422b87cfd32c949dbd531b1ac1b28a7",
+  "type": "administrator",
+  "username": "zika",
+  "address": "Dzordza Vasingtona 21",
+  "credit_card": "7131454502503326",
+  "mail": "zika@gmail.com",
+  "phone": "0654021356",
+  "answer": "kosarka",
+  "question": "Koji ti je omiljeni sport?",
+  "active": true
+},
+{
+  "_id": {
+    "$oid": "666d5d2d677316d46f78e2e1"
+  },
+  "username": "sara",
+  "password": "Sara123!",
+  "firstname": "Sara",
+  "lastname": "Saric",
+  "type": "konobar",
+  "address": "Raska Dimitrijevica 5",
+  "phone": "0664212433",
+  "mail": "sara@gmail.com",
+  "credit_card": "4211356788990022",
+  "question": "Kako ti se zove pas?",
+  "answer": "Pongo",
+  "restaurant": "SImke"
+},
+{
+  "_id": {
+    "$oid": "666d7f2d5e73ea4d3b42bebe"
+  },
+  "username": "goran",
+  "password": "ca7f523ed1652a653280d3a7235f0c86ff1771a9a0e2d4fabdfe633ac14ecb78",
+  "firstname": "Goran",
+  "lastname": "Ilic",
+  "type": "gost",
+  "gender": "musko",
+  "phone": "065789123",
+  "mail": "goran@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Koja ti je omiljena knjiga?",
+  "answer": "Harry Potter",
+  "active": true,
+  "image": "joe.jpeg",
+  "not_showed": 0,
+  "blocked": false,
+  "address": "Savska 124"
+},
+{
+  "_id": {
+    "$oid": "666d820f5e73ea4d3b42bee4"
+  },
+  "username": "lana",
+  "password": "77c9b20384d66cd72825f158d368e29c2aa82d5690231a962b4061cfb7bfa8cd",
+  "firstname": "Lana",
+  "lastname": "Bojanic",
+  "type": "gost",
+  "gender": "zensko",
+  "phone": "0655213427",
+  "mail": "lana@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Kojim se sportom bavis?",
+  "answer": "odbojka",
+  "active": true,
+  "image": "beck.jpg",
+  "not_showed": 2,
+  "blocked": false,
+  "address": "Jase Prodanovica 31"
+},
+{
+  "_id": {
+    "$oid": "666dbfec546cec5f8b65c4ea"
+  },
+  "username": "boban",
+  "password": "791255c497145b2d7ed16c5733270411113d2e23b8ea8a22e8a1a760a7decb5c",
+  "firstname": "Boban",
+  "lastname": "Djordjevic",
+  "type": "gost",
+  "gender": "musko",
+  "phone": "0649988451",
+  "mail": "boban@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Koja ti je omiljena pica?",
+  "answer": "kapricoza",
+  "active": true,
+  "image": "default_user.jpg",
+  "not_showed": 1,
+  "blocked": false,
+  "address": "Sretena Popovica 8"
+},
+{
+  "_id": {
+    "$oid": "666dbff2546cec5f8b65c4ee"
+  },
+  "username": "pera",
+  "password": "127431786f11361fdbab136e5f846d75782f1c54f416528552e14ed5964a9256",
+  "firstname": "Petar",
+  "lastname": "Petrovic",
+  "type": "gost",
+  "gender": "musko",
+  "phone": "0642233415",
+  "mail": "pera@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Koja ti je omiljena zivotinja?",
+  "answer": "lav",
+  "active": true,
+  "image": "default_user.jpg",
+  "not_showed": 0,
+  "blocked": false,
+  "address": "Slanacki put"
+},
+{
+  "_id": {
+    "$oid": "666ea56f88184ad89585ba34"
+  },
+  "username": "mika",
+  "password": "34526702b219e6ba54e233b71d64d72726694aacf25b55fac8cb60b48d8cf08d",
+  "firstname": "Mitar",
+  "lastname": "Mikic",
+  "type": "konobar",
+  "gender": "musko",
+  "address": "Tekeriska 12",
+  "phone": "0641186425",
+  "mail": "mika@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Koje ti je omiljeno jelo?",
+  "answer": "przenice",
+  "restaurant": "Mali Konak",
+  "image": "joe.jpeg"
+},
+{
+  "_id": {
+    "$oid": "666ea89288184ad89585ba6b"
+  },
+  "username": "dana",
+  "password": "f0713226878b7bcabee80b1f86f0685055f9d12616bdf8ec46fc3c1372d29ec2",
+  "firstname": "Danica",
+  "lastname": "Lapcevic",
+  "type": "konobar",
+  "gender": "zensko",
+  "address": "Prelivacka 56",
+  "phone": "063271889",
+  "mail": "dana@gmail.com",
+  "credit_card": "4677 2809 1135 6832",
+  "question": "Koji ti je omiljeni auto?",
+  "answer": "honda",
+  "restaurant": "Insolita"
+},
+{
+  "_id": {
+    "$oid": "666eb131c6de702eeb8bd679"
+  },
+  "username": "jela",
+  "password": "671a14abb13ca41a57c4dc1addfbfe0d6003ba25252847d4aefa7454146840e8",
+  "firstname": "Jelena",
+  "lastname": "Petrovic",
+  "type": "konobar",
+  "gender": "zensko",
+  "address": "Vajfertova 29",
+  "phone": "0668213332",
+  "mail": "jela@gmail.com",
+  "credit_card": "1572 8893 4657 0021",
+  "question": "Koji ti je omiljeni grad?",
+  "answer": "Pariz",
+  "restaurant": "Kod Jage i Gice"
+},
+{
+  "_id": {
+    "$oid": "666eb3fcc6de702eeb8bd680"
+  },
+  "username": "teki",
+  "password": "af6cb4a6d64537a24b10f6a6d3ea00a346f1a84dca962b43de04db9af6f2d954",
+  "firstname": "Teodora",
+  "lastname": "Radovic",
+  "type": "konobar",
+  "gender": "zensko",
+  "address": "Krajiska 34",
+  "phone": "064163256",
+  "mail": "teki@gmail.com",
+  "credit_card": "1146 3273 4429 5568",
+  "question": "Koji ti je omiljeni film?",
+  "answer": "Inglorious Basterds",
+  "restaurant": "Santo Domingo"
+},
+{
+  "_id": {
+    "$oid": "666f4e574780babae792ff6a"
+  },
+  "username": "lena",
+  "password": "3da1d70a9aad3f0f61f515f556dd1e54d41460b5b8929ea7d283f1feea193bbd",
+  "firstname": "Lena",
+  "lastname": "Bogicevic",
+  "type": "konobar",
+  "gender": "zensko",
+  "address": "Bastovanska 148",
+  "phone": "065417889",
+  "mail": "lena@gmail.com",
+  "credit_card": "1133 4221 7891 5576",
+  "question": "Koji ti je omiljeni kontinent?",
+  "answer": "Evropa",
+  "restaurant": "Insolita"
+},
+{
+  "_id": {
+    "$oid": "667012e94ce3f5438da61e6a"
+  },
+  "username": "zana",
+  "password": "6985a43b36a51da0d3d152350b23706766f50001560b6afb42903b55a9ce5e1e",
+  "firstname": "Zana",
+  "lastname": "Jeric",
+  "type": "konobar",
+  "gender": "zensko",
+  "address": "Belegiska 11",
+  "phone": "0654238897",
+  "mail": "zana@gmail.com",
+  "credit_card": "0442 1573 2255 8922",
+  "question": "Kako ti se zove pas?",
+  "answer": "Lala",
+  "restaurant": "Mali Konak",
+  "image": "beck.jpg"
+}]

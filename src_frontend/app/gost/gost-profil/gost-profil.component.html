@@ -1,0 +1,35 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-header">
+      Profil
+    </div>
+    <div class="card-body text-center">
+      <img *ngIf="user.image" [src]="'http://localhost:4000/images/' + user.image" alt="Profilna slika" class="img-thumbnail mb-3" width="150">
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Ime:</div>
+        <div class="col-sm-6 text-left">{{user.firstname}}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Prezime:</div>
+        <div class="col-sm-6 text-left">{{user.lastname}}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Adresa:</div>
+        <div class="col-sm-6 text-left">{{user.address}}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Mejl:</div>
+        <div class="col-sm-6 text-left">{{user.mail}}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Telefon:</div>
+        <div class="col-sm-6 text-left">{{user.phone}}</div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-sm-6 text-right font-weight-bold">Broj kreditne kartice:</div>
+        <div class="col-sm-6 text-left">{{user.credit_card}}</div>
+      </div>
+      <button class="btn btn-primary mt-3" (click)="azuriraj()">Azuriraj</button>
+    </div>
+  </div>
+</div>

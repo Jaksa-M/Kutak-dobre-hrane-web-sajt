@@ -1,0 +1,100 @@
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50px;
+}
+
+.bar {
+  position: relative;
+  width: 100%;
+  background-color: rgba(239, 110, 18, 0.9); /* Adjust the background color */
+  border: 1px solid rgb(1, 12, 19);
+  text-align: center;
+  color: rgb(255, 255, 255); /* Adjust the text color */
+  font-weight: bold; /* Make the text bold for better visibility */
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Change from flex-end to flex-start */
+  width: 50px;
+}
+
+
+.bar-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #330202; /* Adjust the line color */
+}
+
+.label {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(105, 6, 6); /* Adjust the label color */
+}
+
+.pie-chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    var(--slice-color, #eee) 0deg 0deg
+  );
+}
+
+.pie-chart circle {
+  fill: none;
+  stroke-width: 32;
+  transform: translate(16px, 16px) rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.chart-border {
+  border: 1px solid #ccc; /* Add border with light gray color */
+  margin-bottom: 20px; /* Add some space between each chart */
+  padding: 10px; /* Add padding for better spacing */
+}
+
+.chart-title {
+  text-align: center;
+}

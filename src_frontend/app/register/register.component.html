@@ -1,0 +1,48 @@
+<div class="form-container">
+  <h2>Registration</h2>
+  <div class="image-preview">
+    Profilna slika:
+    <input #singleInput type="file" accept="image/jpeg, image/png" (change)="onFileSelected($event)">
+    <br>
+    <img *ngIf="user.image" [src]="user.image" alt="Profilna slika" width="150">
+  </div>
+
+  <label for="username">Korisnicko ime:</label>
+  <input type="text" name="username" [(ngModel)]="user.username">
+
+  <label for="password">Lozinka:</label>
+  <input type="password" name="password" [(ngModel)]="password">
+  <br><span class = "passMessage">{{passMessage}}</span><br>
+
+  <label for="question">Pitanje:</label>
+  <input type="text" name="question" [(ngModel)]="user.question">
+
+  <label for="answer">Odgovor:</label>
+  <input type="text" name="answer" [(ngModel)]="user.answer">
+
+  <label for="firstname">Ime:</label>
+  <input type="text" name="firstname" [(ngModel)]="user.firstname">
+
+  <label for="lastname">Prezime:</label>
+  <input type="text" name="lastname" [(ngModel)]="user.lastname">
+
+  <label>Pol:</label>
+  <input type="radio" name="gender" value="musko" [(ngModel)]="user.gender"> M
+  <input type="radio" name="gender" value="zensko" [(ngModel)]="user.gender"> Z
+
+  <label for="address">Adresa:</label>
+  <input type="text" name="address" [(ngModel)]="user.address">
+
+  <label for="phone">Broj telefona:</label>
+  <input type="text" name="phone" [(ngModel)]="user.phone">
+
+  <label for="mail">Mejl:</label>
+  <input type="text" name="mail" [(ngModel)]="user.mail">
+
+  <label for="credit_card">Broj kreditne kartice:</label>
+  <input type="text" name="credit_card" [(ngModel)]="user.credit_card">
+
+  <div class="button-container">
+    <button (click)="register()">Register</button>
+  </div>
+</div>

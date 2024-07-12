@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "666d7e4d5e73ea4d3b42bea7"
+  },
+  "username": "joca",
+  "password": "e8c68f0c62a0d9d0d0a130d010537d14e806b7bd5826212eca5d13cbfea47c7c",
+  "firstname": "Jovan",
+  "lastname": "Jocic",
+  "gender": "musko",
+  "phone": "0652214372",
+  "mail": "joca@gmail.com",
+  "credit_card": "4211 3567 8899 0022",
+  "question": "Koja ti je omiljena ptica?",
+  "answer": "lasta",
+  "state": "na cekanju",
+  "image": "hankMoody.png"
+}]

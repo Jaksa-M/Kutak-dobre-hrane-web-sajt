@@ -1,0 +1,25 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
